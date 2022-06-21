@@ -1,3 +1,3 @@
-<x-header></x-header>
-
 # Hello World!
+
+<x-spinner></x-spinner>
