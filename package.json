@@ -1,0 +1,23 @@
+{
+  "name": "eleventy-starter-wcc",
+  "version": "1.0.0",
+  "description": "A starter repo for using Eleventy integrated with Web Components Compiler (WCC)",
+  "author": "Owen Buckley <owen@thegreenhouse.io",
+  "license": "MIT",
+  "keywords": [
+    "Eleventy",
+    "WCC"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thescientist13/eleventy-starter-wcc.git"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "serve": "npm run build -- --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "eleventy-plugin-wcc": "^0.0.1"
+  }
+}
