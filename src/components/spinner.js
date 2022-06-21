@@ -1,7 +1,7 @@
 const template = document.createElement('template');
 
 template.innerHTML = `
-  <p>Let's get this to spin!</p>
+  <h1>Let's get this to spin!</h1>
 `;
 
 class SpinnerComponent extends HTMLElement {

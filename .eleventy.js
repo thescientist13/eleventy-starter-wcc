@@ -3,6 +3,9 @@ const { pathToFileURL } = require('url');
 const wccPlugin = require('eleventy-plugin-wcc');
 
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addPassthroughCopy('**/*.css');
+
   eleventyConfig.addPlugin(wccPlugin, {
     definitions: [
       pathToFileURL(path.join(__dirname, './src/components/spinner.js'))
