@@ -14,7 +14,7 @@
   },
   "scripts": {
     "build": "eleventy",
-    "serve": "npm run build -- --serve"
+    "start": "npm run build -- --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",

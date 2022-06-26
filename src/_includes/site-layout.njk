@@ -2,14 +2,36 @@
 <html lang="en">
   
   <head>
+    <title>11ty + WCC = 💚</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11ty and WCC</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="/styles/main.css">
   </head>
   
   <body>
-    {{ content | safe }}
+    <x-header></x-header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <x-footer></x-footer>
+
+    <script>
+       if (!HTMLTemplateElement.prototype.hasOwnProperty('shadowRoot')) {
+         (function attachShadowRoots(root) {
+           root.querySelectorAll("template[shadowroot]").forEach(template => {
+             const mode = template.getAttribute("shadowroot");
+             const shadowRoot = template.parentNode.attachShadow({ mode });
+             shadowRoot.appendChild(template.content);
+             template.remove();
+             attachShadowRoots(shadowRoot);
+           });
+         })(document);
+       }
+     </script>
   </body>
 
 </html>

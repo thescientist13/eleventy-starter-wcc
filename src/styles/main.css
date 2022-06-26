@@ -1,3 +1,60 @@
+:root, :host {
+  --color-white: #efefef;
+  --color-black: #020202;
+  --color-primary: green;
+  --color-secondary: #333;
+}
+
+body {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-size: 16.5px;
+}
+
+header {
+  background-color: var(--color-black);
+}
+
+header nav {
+  display: block;
+  width: 10%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+header nav ul li {
+  width: 50%;
+  float: left;
+  display: inline-block;
+  text-align: center;
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main ul {
+  width: 25%;
+  margin: 0 auto;
+}
+
+main ul li {
+  padding: 2%;
+  text-align: left;
+}
+
+a {
+  color: var(--color-white);
+}
+
 h1 {
-  color: red;
+  color: var(--color-primary);
+}
+
+footer {
+  margin-top: 5vh;
+  text-align: center;
+  background-color: var(--color-black);
 }
