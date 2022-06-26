@@ -17,4 +17,4 @@ To build the site for deployment, run `npm run build`.
 
 ### Serve
 
-To build the site for development and live reloading, run `npm run serve`.
+To build the site for development and live reloading, run `npm start`.
