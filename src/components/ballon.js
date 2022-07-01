@@ -59,7 +59,7 @@ template.innerHTML = `
 
   <div class="container">
     <div class="balloon-anchor">
-      <img src="/assets/baloon_wcc_11ty.png" class="balloon" alt="WCC Logo"  width="350" height="685" loading="lazy" decoding="async" />
+      <img src="/assets/balloon_wcc_11ty.png" class="balloon" alt="WCC Logo"  width="350" height="685" decoding="async" />
     </div>
   </div>
 `;

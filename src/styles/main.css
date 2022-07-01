@@ -40,12 +40,12 @@ main {
 }
 
 a {
-  color: var(--color-white);
+  color: var(--color-primary);
   text-decoration: none;
 }
 
 h1 {
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 ul {
