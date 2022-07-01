@@ -14,10 +14,10 @@
   },
   "scripts": {
     "build": "eleventy",
-    "serve": "npm run build -- --serve"
+    "start": "npm run build -- --serve"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",
-    "eleventy-plugin-wcc": "^0.0.2"
+    "eleventy-plugin-wcc": "^0.1.0"
   }
 }
