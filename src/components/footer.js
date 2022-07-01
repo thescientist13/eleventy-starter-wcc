@@ -2,7 +2,7 @@ class FooterComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer>
-        11ty ◈ WCC
+        <p>11ty ◈ WCC</p>
       </footer>
     `;
   }
