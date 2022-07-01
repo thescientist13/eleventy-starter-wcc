@@ -4,8 +4,15 @@ A starter repo for using Eleventy integrated with Web Components Compiler (WCC) 
 
 ## Usage
 
-1. You can either `git clone` or use `npx degit` to get the contents of this repo.
-1. After that, run `npm ci`.
+1. You can either `git clone` or use [`degit`](https://www.npmjs.com/package/degit) to get the contents of this repo.
+    ```sh
+    # git
+    $ git clone git@github.com:thescientist13/eleventy-starter-wcc.git
+    
+    # degit
+    npx degit thescientist13/eleventy-starter-wcc
+    ```
+1. After that, `cd` into the project and run `npm ci`.
 
 ## Commands
 
