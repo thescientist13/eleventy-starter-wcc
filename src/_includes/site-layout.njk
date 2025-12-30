@@ -20,19 +20,6 @@
 
     <x-footer></x-footer>
 
-    <script>
-       if (!HTMLTemplateElement.prototype.hasOwnProperty('shadowRoot')) {
-         (function attachShadowRoots(root) {
-           root.querySelectorAll("template[shadowroot]").forEach(template => {
-             const mode = template.getAttribute("shadowroot");
-             const shadowRoot = template.parentNode.attachShadow({ mode });
-             shadowRoot.appendChild(template.content);
-             template.remove();
-             attachShadowRoots(shadowRoot);
-           });
-         })(document);
-       }
-     </script>
   </body>
 
 </html>
