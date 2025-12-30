@@ -1,8 +1,6 @@
-const path = require('path');
-const { pathToFileURL } = require('url');
-const wccPlugin = require('eleventy-plugin-wcc');
+import { wccPlugin } from 'eleventy-plugin-wcc';
 
-module.exports = function(eleventyConfig) {
+export default function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy('./src/favicon.ico');
   eleventyConfig.addPassthroughCopy('./src/assets/**/*');
@@ -10,10 +8,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(wccPlugin, {
     definitions: [
-      pathToFileURL(path.join(__dirname, './src/components/footer.js')),
-      pathToFileURL(path.join(__dirname, './src/components/header.js')),
-      pathToFileURL(path.join(__dirname, './src/components/balloon.js'))
-    ]
+      new URL('./src/components/header.js', import.meta.url),
+      new URL('./src/components/footer.js', import.meta.url),
+      new URL('./src/components/balloon.js', import.meta.url)
+    ],
   });
 
   return {
