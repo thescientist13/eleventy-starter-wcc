@@ -1,4 +1,4 @@
-class FooterComponent extends HTMLElement {
+export default class FooterComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer>
@@ -7,7 +7,5 @@ class FooterComponent extends HTMLElement {
     `;
   }
 }
-
-module.exports = FooterComponent;
 
 customElements.define('x-footer', FooterComponent);

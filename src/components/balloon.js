@@ -5,7 +5,6 @@ template.innerHTML = `
   :host .container {
     position: relative;
     width: 100vw;
-    height: 100%;
   }
 
   :host .balloon-anchor {
@@ -64,7 +63,7 @@ template.innerHTML = `
   </div>
 `;
 
-class BalloonComponent extends HTMLElement {
+export default class BalloonComponent extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -74,7 +73,5 @@ class BalloonComponent extends HTMLElement {
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
 }
-
-module.exports = BalloonComponent;
 
 customElements.define('x-balloon', BalloonComponent);

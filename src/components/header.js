@@ -1,4 +1,4 @@
-class HeaderComponent extends HTMLElement {
+export default class HeaderComponent extends HTMLElement {
   constructor() {
     super();
     this.links = [{
@@ -30,7 +30,5 @@ class HeaderComponent extends HTMLElement {
     `;
   }
 }
-
-module.exports = HeaderComponent;
 
 customElements.define('x-header', HeaderComponent);
