@@ -19,6 +19,6 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.0",
-    "@projectevergreen/eleventy-plugin-wcc": "^0.3.0"
+    "@projectevergreen/eleventy-plugin-wcc": "^0.3.1"
   }
 }
