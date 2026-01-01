@@ -12,8 +12,6 @@ export default function(eleventyConfig) {
       new URL('./src/components/footer.js', import.meta.url),
       new URL('./src/components/balloon.js', import.meta.url)
     ],
-    // TODO: figure out why this is necessary to avoid extra <p> tags
-    trimParagraphTagsInMd: false,
   });
 
   return {

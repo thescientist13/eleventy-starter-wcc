@@ -5,7 +5,6 @@ template.innerHTML = `
   :host .container {
     position: relative;
     width: 100vw;
-    height: 100%;
   }
 
   :host .balloon-anchor {
