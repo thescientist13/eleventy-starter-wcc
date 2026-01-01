@@ -1,4 +1,4 @@
-import { wccPlugin } from 'eleventy-plugin-wcc';
+import { wccPlugin } from '@projectevergreen/eleventy-plugin-wcc';
 
 export default function(eleventyConfig) {
 
