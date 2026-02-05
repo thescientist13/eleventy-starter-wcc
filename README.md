@@ -1,6 +1,6 @@
 # eleventy-starter-wcc
 
-A starter repo for using Eleventy integrated with Web Components Compiler (WCC) using [**eleventy-plugin-wcc**](https://github.com/ProjectEvergreen/eleventy-plugin-wcc).
+A starter repo for using Eleventy integrated with Web Components Compiler (WCC) using [**eleventy-plugin-wcc**](https://www.wcc.dev).
 
 ## Usage
 
